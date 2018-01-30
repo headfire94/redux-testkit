@@ -5,19 +5,19 @@
     "registry": "https://registry.npmjs.org/"
   },
   "description": "Complete and opinionated testkit for testing Redux projects (reducers, selectors, actions, thunks)",
-  "author": "Yedidya Kennard <yedidyak@gmail.com>",
+  "author": "Egor Vodopyanoc <egorvodopyanov@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/redux-testkit.git"
+    "url": "https://github.com/headfire94/redux-testkit"
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && babel src --presets=stage-0,latest,react -d dist",
+    "build": "rimraf dist && babel src --presets=stage-0,latest,react -d dist",
     "lint": "eslint src test",
     "pretest": "npm run lint",
     "test": "jest",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "lodash": "^4.0.0",
@@ -48,6 +48,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "regenerator-runtime": "^0.10.3",
+    "rimraf": "^2.6.2",
     "seamless-immutable": "^7.1.1"
   }
 }
