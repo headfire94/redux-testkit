@@ -1,5 +1,5 @@
 {
-  "name": "redux-testkit",
+  "name": "redux-testkit-headfire",
   "version": "1.0.6",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
